@@ -1,5 +1,5 @@
 @import "tailwindcss";
 
 .event-card {
-  @apply group border border-gray-700 bg-gray-800 p-4 block no-underline rounded-lg text-gray-200 hover:border-gray-500 hover:text-white transition text-center font-semibold;
+  @apply border border-gray-700 bg-gray-800 p-4 block no-underline rounded-lg text-gray-200 hover:border-gray-500 hover:text-white transition transform hover:-translate-y-1 hover:shadow-lg text-center font-semibold
 }
