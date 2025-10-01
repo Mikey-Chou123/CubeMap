@@ -1,76 +1,74 @@
 @import "tailwindcss";
 
-@import "tailwindcss";
-
 .event-card {
   @apply bg-gray-800 border border-gray-700 p-6 block no-underline rounded-xl text-gray-200 text-center font-semibold shadow-md transition duration-300 transform hover:-translate-y-1 hover:shadow-lg;
 }
 
-/* Accent colors per event */
-.event-3x3 {
+/* Accent colors (created by ChatGPT)*/
+.color-cyan {
   @apply hover:border-cyan-400 hover:shadow-cyan-500/30;
 }
 
-.event-2x2 {
+.color-pink {
   @apply hover:border-pink-400 hover:shadow-pink-500/30;
 }
 
-.event-4x4 {
+.color-indigo {
   @apply hover:border-indigo-400 hover:shadow-indigo-500/30;
 }
 
-.event-5x5 {
+.color-amber {
   @apply hover:border-amber-400 hover:shadow-amber-500/30;
 }
 
-.event-6x6 {
+.color-emerald {
   @apply hover:border-emerald-400 hover:shadow-emerald-500/30;
 }
 
-.event-7x7 {
+.color-rose {
   @apply hover:border-rose-400 hover:shadow-rose-500/30;
 }
 
-.event-3bld {
+.color-violet {
   @apply hover:border-violet-400 hover:shadow-violet-500/30;
 }
 
-.event-oh {
+.color-teal {
   @apply hover:border-teal-400 hover:shadow-teal-500/30;
 }
 
-.event-fmc {
+.color-orange {
   @apply hover:border-orange-400 hover:shadow-orange-500/30;
 }
 
-.event-clock {
+.color-yellow {
   @apply hover:border-yellow-400 hover:shadow-yellow-500/30;
 }
 
-.event-megaminx {
+.color-fuchsia {
   @apply hover:border-fuchsia-400 hover:shadow-fuchsia-500/30;
 }
 
-.event-pyra {
+.color-lime {
   @apply hover:border-lime-400 hover:shadow-lime-500/30;
 }
 
-.event-skewb {
+.color-red {
   @apply hover:border-red-400 hover:shadow-red-500/30;
 }
 
-.event-sq1 {
+.color-sky {
   @apply hover:border-sky-400 hover:shadow-sky-500/30;
 }
 
-.event-4bld {
+.color-purple {
   @apply hover:border-purple-400 hover:shadow-purple-500/30;
 }
 
-.event-5bld {
+.color-blue {
   @apply hover:border-blue-400 hover:shadow-blue-500/30;
 }
 
-.event-mbld {
+.color-green {
   @apply hover:border-green-400 hover:shadow-green-500/30;
 }
