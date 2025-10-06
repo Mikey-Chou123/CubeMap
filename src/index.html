@@ -9,26 +9,30 @@
 </head>
 
 <body class="p-10 bg-gray-900 text-gray-200 font-sans">
+
+  <!-- Header -->
   <header class="mb-8 text-center">
     <a href="michael.html">
       <h1 class="text-2xl sm:text-5xl sm:leading-tight font-bold mb-2 sm:mb-4 
-             bg-gradient-to-b from-amber-50 to-purple-500 
-             bg-clip-text text-transparent 
-             transition duration-300 ease-in-out 
-             hover:scale-105 hover:opacity-90 cursor-pointer">
+               bg-gradient-to-b from-amber-50 to-purple-500 
+               bg-clip-text text-transparent 
+               transition duration-300 ease-in-out 
+               hover:scale-105 hover:opacity-90 cursor-pointer">
         CubeMap: Your Cubing Roadmap
       </h1>
     </a>
-    <p class="bg-gradient-to-b from-cyan-100 to-gray-400 bg-clip-text text-transparent text-2xl italic">Choose a WCA
-      event to explore its roadmap</p>
+    <p class="bg-gradient-to-b from-cyan-100 to-gray-400 bg-clip-text text-transparent text-2xl italic">
+      Choose a WCA event to explore its roadmap
+    </p>
   </header>
 
-  <main class="space-y-12">
+  <!-- Main Layout -->
+  <main class="grid grid-cols-1 md:grid-cols-3 gap-12">
 
     <!-- NxN Events -->
     <section>
-      <h2 class="text-xl sm:text-2xl font-bold mb-4 text-cyan-300">NxN</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <h2 class="text-xl sm:text-2xl font-bold mb-4 text-cyan-300 text-center">NxN</h2>
+      <div class="flex flex-col gap-4">
         <a href="3x3.html" class="event-card color-cyan">3×3</a>
         <a href="apology.html" class="event-card color-pink">2×2</a>
         <a href="apology.html" class="event-card color-indigo">4×4</a>
@@ -40,10 +44,10 @@
 
     <!-- Non-NxN Events -->
     <section>
-      <h2 class="text-xl sm:text-2xl font-bold mb-4 text-yellow-300">Non-NxN</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <h2 class="text-xl sm:text-2xl font-bold mb-4 text-yellow-300 text-center">Non-NxN</h2>
+      <div class="flex flex-col gap-4">
         <a href="apology.html" class="event-card color-teal">3×3 One-Handed</a>
-        <a href="apology.html" class="event-card color-orange">Fewest Moves Challenge (FMC)</a>
+        <a href="apology.html" class="event-card color-orange">Fewest Move Challenge (FMC)</a>
         <a href="apology.html" class="event-card color-yellow">Clock</a>
         <a href="apology.html" class="event-card color-fuchsia">Megaminx</a>
         <a href="apology.html" class="event-card color-lime">Pyraminx</a>
@@ -52,13 +56,10 @@
       </div>
     </section>
 
-    </div>
-    </section>
-
     <!-- Blindfolded Events -->
     <section>
-      <h2 class="text-xl sm:text-2xl font-bold mb-4 text-purple-300">Blindfolded (BLD)</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <h2 class="text-xl sm:text-2xl font-bold mb-4 text-purple-300 text-center">Blindfolded (BLD)</h2>
+      <div class="flex flex-col gap-4">
         <a href="apology.html" class="event-card color-violet">3×3 Blindfolded</a>
         <a href="apology.html" class="event-card color-purple">4×4 Blindfolded</a>
         <a href="apology.html" class="event-card color-blue">5×5 Blindfolded</a>
@@ -67,6 +68,7 @@
     </section>
 
   </main>
+
 
 </body>
 
