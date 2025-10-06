@@ -5,33 +5,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
-    <link rel="stylesheet" href="@cubing/icons/css">
-    <title>CubeMap: 3x3</title>
-
+    <title>CubeMap: 3×3 Methods</title>
 </head>
 
-<body class="p-10 bg-gray-900 text-gray-200">
-    <header class="text-center mb-8">
-        <h1 class="text-7xl font-bold mb-2">3x3</h1>
-        <p class="text-2xl mx-auto max-w-300">3x3 Rubik’s Cube — the world’s best-selling puzzle with over 43
-            quintillion possible scrambles. It’s the face
-            of the World Cube Association (WCA) and the ultimate test of speed, skill, and style in cubing.</p>
+<body class="min-h-screen bg-gray-900 text-gray-200 flex flex-col p-10">
+    <!-- Header -->
+    <header class="text-center mb-12">
+        <h1 class="text-7xl font-bold mb-6 text-center">3×3 Roadmap</h1>
+        <p class="text-2xl text-gray-400 mx-auto text-center mb-4">
+            The 3×3 Rubik’s Cube is a timeless puzzle with over
+            <span class="text-cyan-400 font-semibold">43 quintillion</span> possible scrambles.
+        </p>
+        <p class="text-2xl text-gray-400 max-w-3xl mx-auto text-center">
+            Over the years, cubers have developed many solving methods. Two of the most iconic are
+            <span class="text-pink-400 font-semibold">CFOP</span> and
+            <span class="text-violet-400 font-semibold">Roux</span>, each offering a unique approach to
+            speed and creativity.
+        </p>
+
     </header>
 
-    <main class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
-        <!-- CFOP Card -->
-        <a href="cfop.html" class="event-card color-pink">
-            <h2 class="text-xl font-bold mb-2">CFOP</h2>
-            <p>The most famous and widely used method for solving the 3x3. Built around 4 main steps: <br> Cross, F2L,
-                OLL, PLL</p>
-        </a>
+    <!-- Two-Halves Section -->
+    <main class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <!-- CFOP Section -->
+        <div
+            class="bg-gray-800 rounded-3xl p-8 hover:shadow-pink-500/20 transition-all duration-300 flex flex-col justify-between">
+            <div>
+                <h2 class="text-4xl font-bold text-pink-400 mb-4">CFOP</h2>
+                <p class="text-gray-300 mb-6">
+                    The <span class="font-semibold">CFOP</span> method (Cross, F2L, OLL, PLL) is the most widely used
+                    speedsolving method. It’s structured, algorithm-based, and emphasizes memorization and efficiency —
+                    the go-to for most world-class cubers.
+                </p>
+                <ul class="list-disc list-inside text-gray-400 mb-6 space-y-2">
+                    <li><span class="font-medium text-gray-300">Cross:</span> Build a cross on one face as a foundation.
+                    </li>
+                    <li><span class="font-medium text-gray-300">F2L:</span> Solve corner-edge pairs for the first two
+                        layers.</li>
+                    <li><span class="font-medium text-gray-300">OLL:</span> Orient the last layer with algorithms.</li>
+                    <li><span class="font-medium text-gray-300">PLL:</span> Permute all pieces to finish the solve.</li>
+                </ul>
+                <p class="italic text-gray-500">Best suited for: algorithm lovers and competitive speedcubers.</p>
+            </div>
+            <a href="cfop.html"
+                class="inline-block mt-6 bg-pink-500 hover:bg-pink-600 text-white px-6 py-2 rounded-lg font-semibold transition">
+                Learn CFOP →
+            </a>
+        </div>
 
-        <!-- Roux Card -->
-        <a href="roux.html" class="event-card color-violet">
-            <h2 class="text-xl font-bold mb-2">Roux</h2>
-            <p>A block-building method that emphasizes efficiency, fewer moves, and a unique approach to solving.</p>
-        </a>
+        <!-- Roux Section -->
+        <div
+            class="bg-gray-800 rounded-3xl p-8 hover:shadow-violet-500/20 transition-all duration-300 flex flex-col justify-between">
+            <div>
+                <h2 class="text-4xl font-bold text-violet-400 mb-4">Roux</h2>
+                <p class="text-gray-300 mb-6">
+                    The <span class="font-semibold">Roux</span> method focuses on block-building and intuition. Instead
+                    of memorizing hundreds of algorithms, solvers rely on spatial reasoning, freedom, and move
+                    efficiency.
+                </p>
+                <ul class="list-disc list-inside text-gray-400 mb-6 space-y-2">
+                    <li><span class="font-medium text-gray-300">First Blocks</span> Build 1×2×3 blocks on the left.</li>
+                    <li><span class="font-medium text-gray-300">Second Block</span> Build another 1×2×3 blocks this time
+                        on the right.</li>
+                    <li><span class="font-medium text-gray-300">CMLL:</span> Solve the top corners while preserving the
+                        blocks.</li>
+                    <li><span class="font-medium text-gray-300">LSE:</span> Finish the remaining edges using minimal
+                        moves.</li>
+                </ul>
+                <p class="italic text-gray-500">Best suited for: creative thinkers who prefer intuition over algorithms.
+                </p>
+            </div>
+            <a href="roux.html"
+                class="inline-block mt-6 bg-violet-500 hover:bg-violet-600 text-white px-6 py-2 rounded-lg font-semibold transition">
+                Learn Roux →
+            </a>
+        </div>
     </main>
+
+    <!-- Comparison Section -->
+    <section class="mt-16 max-w-4xl mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-6">CFOP vs Roux</h2>
+        <p class="text-gray-400 text-lg leading-relaxed mb-4">
+            <span class="text-pink-400 font-semibold">CFOP</span> is algorithm-heavy, focusing on speed and consistency
+            through memorization.
+            <span class="text-violet-400 font-semibold">Roux</span> is intuitive and efficient, relying on understanding
+            cube structure and flexibility.
+        </p>
+        <p class="text-gray-500 italic">
+            Both methods can reach world-class times — it’s all about which philosophy suits your style of thinking.
+        </p>
+    </section>
 </body>
 
 </html>
